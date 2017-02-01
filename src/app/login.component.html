@@ -1,0 +1,9 @@
+<div class="container">
+  <label><b>Username</b></label>
+  <input type="text" [(ngModel)]="email" placeholder="Enter Username" name="uname" required>
+
+  <label><b>Password</b></label>
+  <input type="password" [(ngModel)]="password" placeholder="Enter Password" name="psw" required>
+
+  <button type="submit" (click)="onSubmit(email, password)">Login</button>
+</div>

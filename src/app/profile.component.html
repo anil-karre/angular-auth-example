@@ -1,0 +1,6 @@
+<h3>Profile Page</h3>
+<nav>
+  <a *ngIf="user.isAdmin()" routerLink="/admin" routerLinkActive="active">Admin</a>
+  <a *ngIf="user.isUser()" routerLink="/user" routerLinkActive="active">User</a>
+  <button type="submit" (click)="user.logout()">Logout</button>
+</nav>
